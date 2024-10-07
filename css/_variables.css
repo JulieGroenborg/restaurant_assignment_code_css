@@ -1,0 +1,15 @@
+:root{
+--primaryColor: rgb(210, 70, 70);
+--secondaryColor: rgb(52, 52, 92);
+
+--subColorGrey: rgb(211, 211, 211);
+--subColorYellow: rgb(239, 235, 187);
+--subColorWhite: rgb(235, 235, 235);
+
+--fontSansSerif: Arial, Helvetica, sans-serif;
+
+--spaceRemSmall: 0.2rem;
+--spaceRemSmall_2: 0.5rem;
+--spaceRemMedium: 1rem;
+--spaceRemLarge: 2rem;
+}

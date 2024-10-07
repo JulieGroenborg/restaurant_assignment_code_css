@@ -1,0 +1,85 @@
+nav{
+    [title='Home page']{
+        color: var(--subColorYellow);
+        font-size: 1.2rem;
+    }
+}
+
+main{
+    margin: var(--spaceRemSmall_2) var(--spaceRemMedium);
+    font-size: small;
+    img{
+        border-radius: var(--spaceRemMedium);
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--spaceRemSmall_2);
+    }
+
+    section:nth-of-type(2){
+        margin-bottom: var(--spaceRemMedium);
+    }
+
+    ul{
+        li{
+            list-style: none;
+            color: var(--primaryColor);
+            font-weight: bold;
+            margin: var(--spaceRemSmall_2);
+        }
+    }
+
+    blockquote{
+        background-color: var(--subColorGrey);
+        padding: 1rem;
+
+        :last-child{
+            margin-top: var(--spaceRemSmall_2);
+            text-align-last: left;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    main{
+        margin: var(--spaceRemMedium) 1.2rem;
+        div:first-child{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row-reverse;
+            div{
+                flex-shrink: 500;
+                padding-right: var(--spaceRemMedium);
+            }
+        }  
+        blockquote{
+            margin-left: var(--spaceRemMedium);
+            margin-bottom: var(--spaceRemMedium);
+            :last-child{
+                margin-left: var(--spaceRemMedium);
+            }
+        } 
+    }
+    
+}
+
+@media (min-width: 1024px){
+    main{
+        margin: var(--spaceRemMedium) 8rem;
+        div:first-child{
+            div{
+                margin-bottom: 2.2rem;
+            }
+        }  
+        ul{
+            margin-top: 1.2rem;
+        }
+        blockquote{
+            margin-left: var(--spaceRemMedium);
+            margin-bottom: var(--spaceRemMedium);
+        } 
+    }
+    
+}

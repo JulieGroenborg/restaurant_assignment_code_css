@@ -1,0 +1,87 @@
+nav{
+    [title='Menu page']{
+        color: var(--subColorYellow);
+        font-size: 1.2rem;
+    }
+}
+
+main{
+    margin: 0 var(--spaceRemSmall_2);
+    article{
+        background-color: var(--subColorYellow);
+        margin: var(--spaceRemSmall_2);
+        padding: 1.5rem;
+        border-radius: var(--spaceRemSmall_2);
+        img{
+            width: 100%;
+            border-radius: var(--spaceRemSmall_2);
+        }
+        h2{
+            margin: var(--spaceRemSmall_2) 0;
+            font-size: var(--spaceRemMedium);
+        }
+
+        p:last-child{
+            background-color: var(--primaryColor);
+            display: inline-block;
+            padding: var(--spaceRemSmall_2) var(--spaceRemMedium);
+            margin-top: var(--spaceRemMedium);
+            border-radius: var(--spaceRemSmall_2);
+            border: var(--spaceRemSmall) solid black;
+            color: var(--subColorWhite);
+            font-weight: bold;
+        }  
+    }
+}
+
+@media (min-width: 768px){
+    main{
+        article{
+            display: flex;
+            flex-flow: row-reverse;
+            img{
+                width: 20rem;
+                flex-grow: 2;
+            }
+            div{
+                width: 50%;
+                padding-right: var(--spaceRemMedium);
+                h2{
+                    font-size: 1.2rem;
+             }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    main{
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            place-content: center;
+            margin: var(--spaceRemMedium) 0;
+            article{
+                width: 28rem;
+                padding: var(--spaceRemMedium);
+                margin: var(--spaceRemSmall);
+                img{
+                    width: 17rem;
+                    height: 12rem;
+                    flex-grow: 0;
+                }
+                div{
+                    width: 50%;
+                    height: auto;
+                    padding-right: var(--spaceRemMedium);
+                    h2{
+                        margin-top: 0;
+                    }
+                    p:last-child{
+                        margin-top: var(--spaceRemSmall_2);
+                    } 
+                }
+            }
+        }
+    }
+}

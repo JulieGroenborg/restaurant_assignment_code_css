@@ -1,0 +1,108 @@
+nav{
+    [title='Contact page']{
+        color: var(--subColorYellow);
+        font-size: 1.2rem;
+    }
+}
+
+main{
+    margin: var(--spaceRemMedium);
+}
+
+img{
+    width: 95%;
+    padding: var(--spaceRemSmall_2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+}
+address{
+    font-style: normal;
+    margin: var(--spaceRemMedium) 0;
+}
+
+section{
+    a{
+        color: var(--secondaryColor);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    >p{
+        margin: var(--spaceRemMedium) 0;
+    }
+}
+
+fieldset{
+    border-radius: var(--spaceRemSmall_2);
+    padding: var(--spaceRemSmall_2);
+    border: 1px solid var(--secondaryColor);
+    legend{
+        margin-left: var(--spaceRemMedium);
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        padding: var(--spaceRemSmall) 0;
+    }
+
+    button{
+        padding: 0.3rem var(--spaceRemSmall_2);
+        border: 2px solid var(--secondaryColor);
+        border-radius: 0.2rem;
+        margin-left: var(--spaceRemMedium);
+    }
+}
+
+
+@media (min-width: 768px){
+    img{
+        height: 300px;
+        object-fit: cover;
+        margin: 0;
+        width: 98%;
+    }
+    .personer, .datotid{
+        width: 45%;
+    }
+}
+
+
+@media (min-width: 1024px){
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        #content{
+            width: 40%;
+
+            address{
+                margin: 0;
+            }
+        }
+
+        img{
+            width: 40%;
+            height: 60%;
+            margin-left: var(--spaceRemMedium);
+        }
+
+        fieldset{
+            div{
+                padding: var(--spaceRemSmall);
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+
+                label{
+                    white-space: nowrap;
+                }
+            }
+            div:last-of-type{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
